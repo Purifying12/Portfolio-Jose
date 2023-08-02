@@ -18,7 +18,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="slider.css">
+<script src="script.js" defer></script>
    
     <title>Portfolio </title>
   </head>
@@ -57,7 +58,7 @@
       <hr style="margin: 0px 0px; height: 3px; opacity: 0.5" class="pt-5"/>
         <div class="container pt-4">
             <div id="title" class="row">
-              <h3><img src="images/marijuana.jpg" alt="" width="90" height="60" class="d-inline-block align-text-top" /> Website</h3>
+              <h3><img src="images/Flower.jpg" alt="" width="90" height="60" class="d-inline-block align-text-top" /> Website</h3>
             </div>
             <div id="contents" class="row">
               <div id="contents-1" class="col-md-4">
@@ -70,10 +71,11 @@
                       <strong>
                         <p style="margin-bottom: 0">
                             <div class="card" style="width: 18rem;">
-                                <img src="images/youthpedia.PNG" width="150rem" height="200rem" class="card-img-top" alt="...">
+                              
+                              <img src="images/CartShop.PNG" width="150rem" height="200rem" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <a href="https://youthpedia.netlify.app/"><h5 class="card-title"><b>Youthpedia</b></h5></a>
-                                  <p class="card-text text-truncate">ReactJs / NodeJs / MongoDb</p>
+                                  <a href="javascript:;"><h5 class="card-title"><b>TrollMarket</b></h5></a>
+                                  <p class="card-text text-truncate">SpringBoot/Sql Server</p>
                                   <button id="myBtn">More</button>
 
                                   <!-- The Modal -->
@@ -85,12 +87,98 @@
                                       <hr style="margin: 0px 0px; height: 3px; opacity: 0.5" />
                                       
                                       <div class="col">
-                                        <img src="images/youthpedia.PNG" width="10%" height="10%" class="card-img-top" alt="...">
+                                        <div class="slideshow-container">
+
+                                          <div class="containers">
+                                            <div class="mySlides">
+                                              <div class="numbertext">1 / 3</div>
+                                              <img src="images/buyer.PNG" style="width:100%">
+                                            </div>
+                                          
+                                            <div class="mySlides">
+                                              <div class="numbertext">2 / 3</div>
+                                              <img src="images/Seller.PNG" style="width:100%">
+                                            </div>
+                                          
+                                            <div class="mySlides">
+                                              <div class="numbertext">3 / 3</div>
+                                              <img src="images/admin.PNG" style="width:100%">
+                                            </div>
+                                          
+                                              
+                                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                            <a class="next" onclick="plusSlides(1)">❯</a>
+                                          
+                                            <div class="caption-container">
+                                              <p id="caption"></p>
+                                            </div>
+                                          
+                                            <div class="row">
+                                              <div class="column">
+                                                <img class="demo cursor" src="images/buyer.PNG" style="width:100%" onclick="currentSlide(1)" alt="buyer">
+                                              </div>
+                                              <div class="column">
+                                                <img class="demo cursor" src="images/Seller.PNG" style="width:100%" onclick="currentSlide(2)" alt="seller">
+                                              </div>
+                                              <div class="column">
+                                                <img class="demo cursor" src="images/admin.PNG" style="width:100%" onclick="currentSlide(3)" alt="admin">
+                                              </div>
+                                              
+                                            </div>
+                                          </div>
+                                          
+                                          
+                                          
+                                        
+                                        </div>
                                       </div>
                                       
-                                      <b>Youthpedia</b>
+                                      <b>TrollMarket</b>
                                       <div class="card p-2" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
-                                        <p>Youthpedia dibuat menggunakan framework ReactJs serta NodeJs. <br> merupakan aplikasi penyedia informasi yang divalidasi oleh admin sebelum disebarkan ke publik, yang gunanya untuk mengurangi resiko kaum muda ASEAN mendapatkan informasi hoax atau kurang terpercaya sumbernya</p>
+                                        <p>TrollMarket dibuat menggunakan framework SpringBoot. <br> merupakan aplikasi penyedia marketplace sederhana antara pembeli, penjual dan admin yang mengatur shipping</p>
+                                        <div class="spesifikasi">
+                                          <table>
+                                            <tr>
+                                              <td>Framework</td>
+                                              <td>
+                                                <div>
+                                                SpringBoot
+                                                </div>
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                              <td>
+                                                Database
+                                              </td>
+                                              <td>Sql Server</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Programming language</td>
+                                              <td>
+                                                <div>
+                                                Backend : Java
+                                                </div>
+                                                <div>
+                                                  Frontend : Javascript
+                                                  </div>
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                              <td>Template</td>
+                                            
+                                              <td>
+                                                Thymeleaf
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td>ORM</td>
+                                            
+                                            <td>
+                                              JPA
+                                            </td>
+                                          </tr>
+                                          </table>
+                                        </div>
                                       </div>
                                     </div>
 
@@ -108,6 +196,82 @@
                 <div class="row">
                   <div id="contents-1-number" class="col-2">
                     <h2><strong>02</strong></h2>
+                  </div>
+                  <div id="contents-1-content" class="col">
+                    <div id="contents-1-content-author" class="row">
+                      <strong>
+                        <p style="margin-bottom: 0">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/youthpedia.PNG" width="150rem" height="200rem" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <a href="https://www.figma.com/file/vuhuto94lvtg2Qz5q7tTaF/Desain-Youthpedia?type=design&node-id=0%3A1&mode=design&t=ueXfDqCT9dsd60A8-1"><h5 class="card-title"><b>Youthpedia</b></h5></a>
+                                  <p class="card-text text-truncate">ReactJs / NodeJs / MongoDb</p>
+                                  <button id="myBtn1">More</button>
+
+                                  <!-- The Modal -->
+                                  <div id="myModal1" class="modal1">
+
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                      <span class="cls close1">&times;</span>
+                                      <hr style="margin: 0px 0px; height: 3px; opacity: 0.5" />
+                                      
+                                      <div class="col">
+                                        <img src="images/youthpedia.PNG" width="10%" height="10%" class="card-img-top" alt="...">
+                                      </div>
+                                      
+                                      <b>Youthpedia</b>
+                                      <div class="card p-2" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                                        <p>Youthpedia dibuat menggunakan framework ReactJs serta NodeJs. <br> merupakan aplikasi penyedia informasi yang divalidasi oleh admin sebelum disebarkan ke publik, yang gunanya untuk mengurangi resiko kaum muda ASEAN mendapatkan informasi hoax atau kurang terpercaya sumbernya</p>
+                                        <div class="spesifikasi">
+                                          <table>
+                                            <tr>
+                                              <td>Framework</td>
+                                              <td>
+                                                <div>
+                                                Front End : React Js
+                                                </div>
+                                                <div>
+                                                  
+                                                Back End : Node Js
+                                                </div>
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                              <td>
+                                                Database
+                                              </td>
+                                              <td>MongoDb</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Programming language</td>
+                                              <td>Javascript</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Template</td>
+                                            </tr>
+                                            <td>
+                                              Bootstrap,Html,Css
+                                            </td>
+                                          </table>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                        </p>
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="contents-1" class="col-md-4">
+                <div class="row">
+                  <div id="contents-1-number" class="col-2">
+                    <h2><strong>03</strong></h2>
                   </div>
                   <div id="contents-1-content" class="col">
                     <div id="contents-1-content-author" class="row">
@@ -147,11 +311,84 @@
                   </div>
                 </div>
               </div>
-              <div id="contents-1" class="col-md-4">
-
-              </div>
+              
+              
               
             </div>
+            <div class="row">
+              <div id="contents-1" class="col-md-4">
+                <div class="row">
+                  <div id="contents-1-number" class="col-2">
+                    <h2><strong>04</strong></h2>
+                  </div>
+                  <div id="contents-1-content" class="col">
+                    <div id="contents-1-content-author" class="row">
+                      <strong>
+                        <p style="margin-bottom: 0">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Onvocation.PNG" width="150rem" height="200rem" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <a href="https://onvocation.netlify.app/"><h5 class="card-title"><b>Web Profile UPT KPH II Siantar</b></h5></a>
+                                  <p class="card-text text-truncate">Laravel</p>
+                                  <button id="myBtn6">More</button>
+
+                                  <!-- The Modal -->
+                                  <div id="myModal6" class="modal6">
+
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                      <span class="cls close6">&times;</span>
+                                      <hr style="margin: 0px 0px; height: 3px; opacity: 0.5" />
+                                      <div class="col pt-2">
+                                      <div class="col">
+                                        <img src="images/UPT KPH II.PNG" width="10%" height="10%" class="card-img-top" alt="...">
+                                      </div>
+                                      
+                                      <b>Web Profile UPT KPH II Siantar</b>
+                                      <div class="card p-2" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                                        <p>Website ini dibuat menggunakan framework Laravel. <br> merupakan aplikasi penyedia informasi profile UPT KPH Wilayah II Siantar.</p>
+                                        <div class="spesifikasi">
+                                          <table>
+                                            <tr>
+                                              <td>Framework</td>
+                                              <td>
+                                                <div>
+                                                Laravel
+                                                </div>
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                              <td>
+                                                Database
+                                              </td>
+                                              <td>MySql</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Programming language</td>
+                                              <td>Php</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Template</td>
+                                            </tr>
+                                            <td>
+                                              Bootstrap,Html,Css
+                                            </td>
+                                          </table>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                        </p>
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         <hr style="margin: 0px 0px; height: 3px; opacity: 0.5" />
     </section>
@@ -159,7 +396,7 @@
         
         <div class="container">
             <div id="title" class="row">
-              <h3><img src="images/marijuana.jpg" alt="" width="90" height="60" class="d-inline-block align-text-top" /> Design</h3>
+              <h3><img src="images/Flower.jpg" alt="" width="90" height="60" class="d-inline-block align-text-top" /> Design</h3>
             </div>
             <div id="contents" class="row">
               <div id="contents-1" class="col-md-4">
@@ -310,7 +547,7 @@
           </div>
           <div class="row">
               <div class="col-sm-12">
-                  <a href="" class="btn-danger"> Sukreb to Yutub </a>
+                  <!-- <a href="" class="btn-danger"> Sukreb to Yutub </a> -->
               </div>
           </div>
       </div>
@@ -318,9 +555,38 @@
   
   <!-- end of footer -->
     </section>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
 
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
     
-    <script src="script.js"></script>
+    
 
 </body>
 </html>
